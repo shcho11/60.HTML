@@ -1,5 +1,4 @@
-# HTML_JavaScript
-HTML 객체구조
+# HTML 객체구조
 - 객체들은 계층 구조로 이루어져 있다
 - 최상위 객체는 Window객체, 그 아래에는 frames, document, history, location 객체가 있으며 각각의 객체들은 아래로 또 다른 객체들로 파생
 Window 객체
@@ -50,5 +49,34 @@ Javascript 객체모형
    자바스크립트 자체애 내장된 내장객체 : Date, Math, String, Array 등
    
 브라우저 객체모형
-- 브라우저 객체는 브라우저 화면에 나타나는 모든 요소들을 
+- 브라우저 객체는 브라우저 화면에 나타나는 모든 요소들을 포함하는 것으로, 계층적인 트리구조로 구성되어 있음.
+- window 라는 최상위 객체에서 파생된 수많은 하위 객체를 포함
+- 각각의 하위 객체들은 계층구조에 의해 정의되어 있으며, 접근할 수 있음.
+- 브라우저 객체는 계층구조로 접근함
+
+브라우저 객체에 접근하는 방법
+<ol start="1">
+<li>객체 이름으로 객체에 접근</li>
+  객체 고유의 이름(태그의 name 속성에 지정된 값을) 사용
+  window.document.form이름.입력상자이름
+  ex) 
+  <FORM NAME="frm1">
+  아이디 : <INPUT TYPE="text" name="tel">
+  var phone = window.document.frm1.tel.value;
+  
+<li>DOM Method 이용</li>
+  document.getElementbyId()
+  id값을 통해 해당 element 에 접근
+  id에 대한 element를 가져온다(get)
+  ex) 
+  <FORM NAME = "frm1">
+  아이디 : <INPUT TYPE="text" name="tel" id="tel">
+  var phone = document.getElementbyId("tel").value;
+</ol>
+    
+ DOM 이란?
+    - 문서 객체 모델. 하나의 웹 문서를 객체화해서 문서의 구조에 접근할 수 있는 방법.
+
+ 
+ 
 
