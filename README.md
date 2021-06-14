@@ -31,7 +31,7 @@ Document 객체
 
    객체.속성값 = "속성값"
    ex) document.bgColor = "green";
-
+   
 
 메서드
 - 객체의 동작, 하는 일, 기능
@@ -78,6 +78,7 @@ Javascript 객체모형
  DOM 이란?
     - 문서 객체 모델. 하나의 웹 문서를 객체화해서 문서의 구조에 접근할 수 있는 방법.
 
- 
+ 참고 :
+<a href="https://m.blog.naver.com/PostList.naver?blogId=bionic2030">만찐두빵의 프로그래밍 블로그</href>
  
 
