@@ -43,6 +43,7 @@ Document 객체
    
 - Javascript의 객체들은(브라우저 객체, 내장객체)은 이미 이러한 속성과 메서드가 정의되어 있음.
 
+# 객체모형
 Javascript 객체모형
 - 자바스크립트에는 수많은 객체가 이미 정의되어 있음. 
    웹 브라우저와 관련있는 브라우저 객체 : window, document, frame, history, location, form, image, link, radio, text, navigator 등
@@ -54,7 +55,7 @@ Javascript 객체모형
 - 각각의 하위 객체들은 계층구조에 의해 정의되어 있으며, 접근할 수 있음.
 - 브라우저 객체는 계층구조로 접근함
 
-브라우저 객체에 접근하는 방법
+# 브라우저 객체에 접근하는 방법
 <ol start="1">
 <li>객체 이름으로 객체에 접근</li>
   객체 고유의 이름(태그의 name 속성에 지정된 값을) 사용
