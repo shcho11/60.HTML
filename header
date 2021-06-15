@@ -1,0 +1,17 @@
+[html5] header 태그
+<header> 요소 : 사이트 네비게이션이나 페이지에 대한 정보를 담는 태그. 페이지 상단에 위치.
+<section>의 머릿말을 담기도 한다. <div id ="header">와 같은 역할.
+보통 하나 이상의 제목 요소 (h1~h6 이나 hgroup)나 사이트 로고, 저작권 정보 등을 포함한다.
+명세에 따르면, 최근에 <nav> 요소를 포함할 수 있다.
+한 문서에 여러 개 <header> 요소가 있을 수 있다. 다만, <footer> <address> 또는 다른 <header>안에 <header>를 둘 수 없다.
+
+* html / css 작성 예
+html
+<header>
+ <h1>HEADER</h1>
+ <p>The header element represents the header of a section </p>
+</header>
+
+css
+header{background-color:#6495ed:padding:10px:}
+
