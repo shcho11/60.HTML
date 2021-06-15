@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+ <title>HTML5</html>
+ <meta charset="utf-8">
+ <!---[if It IE 9]>
+ <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js">
+ </script>
+ <![endif]-->
+ <style>CSS스타일</style>
+</head>
+<body>
+<header>머릿부분(페이지 제목 등)</header>
+<nav>메뉴</nav>
+<section>본문내용</section>
+<footer>꼬리말(저작권 정보 등)</footer>
+</body>
+</html>
