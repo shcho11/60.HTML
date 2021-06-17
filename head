@@ -1,0 +1,118 @@
+head에 들어가는 태그 (title, style, script, meta 등)
+
+<title> 문서 제목을 넣는 태그
+
+- 문서 제목을 나타내는 태그로, 본문에는 나타나지 않음.
+- 대신, 브라우저 툴 바 상단이나 검색할 때 이 title이 제목으로 나옴.
+- 제목은 하나 이상 쓸 수 없음
+- <title></title> 은 head 영역에서만 사용 가능
+
+사용 예 : 
+<html>
+<head>
+ <title>페이지 제목</title>
+</head>
+<body>
+홈페이지에 오신 것을 환영합니다.
+</body>
+</html>
+
+<style> style 정보(글꼴, 색상, 너비, 높이 등)를 규정하는 태그.
+
+ - 주로 css 문서에 사용됨.
+ - style은 3가지 방식으로 사용됨. 
+
+1) Inline 스타일  (style을 태그 속성처럼 사용)
+
+<html>
+ <head>
+  <title>페이지 제목입니다.</title>
+ </head>
+ <body style="color:red;">
+  홈페이지에 오신 것을 환영합니다.
+ </body>
+</html>
+
+2) Internal 스타일 (style태그로 삽입)
+
+<html>
+ <head>
+  <title>페이지 제목입니다</title>
+  <style type="text/css">
+   body {color:red;}
+  </style>
+ </head>
+ <body>
+  홈페이지에 오신 것을 환영합니다.
+ </body>
+</html>
+
+3) External (외부로 연결하여 사용)
+3-1) css확장자로 저장 
+body {color:red;}
+
+3-2) htm확장자로 저장
+<html>
+ <head>
+  <title>페이지 제목입니다</title>
+  <link rel="stylesheet" type="text/css" href="test.css"/>
+ </head>
+ <body>
+  홈페이지에 오신 것을 환영합니다.
+ </body>
+</html>
+
+<script> 자바스크립트같은 다른 프로그래밍 언어를 연결시키는 태그
+
+- script태그는 head영역과 body영역에 모두 올 수 있음
+- 이 스크립트를 브라우저에서 어떻게 번역해야 할 지를 알려줌
+
+1-1. htm문서에 자바스크립트 끼워넣기 (head 영역 안에)
+
+<html>
+ <head>
+  <title>페이지 제목입니다</title>
+ <script type="text/javascript">
+  alert('안녕하세요');
+ </script>
+  </head>
+  <body>
+   홈페이지에 오신 것을 환영합니다.
+  </body>
+ </html>
+ 
+ 1-2. html문서에 자바스크립트 끼워넣기 (body 영역 안에)
+ 
+ <html>
+  <head>
+   <title>페이지 제목입니다.</title>
+  </head>
+  <body>
+   홈페이지에 오신 것을 환영합니다.
+  <script type="text/javascript">
+   alert('안녕하세요');
+  </script>
+  </body>
+ </html>
+ 
+2. 외부로 javascript 연결
+ 
+자바스크립트 파일을 js확장자(.js)로 저장
+ 
+ex> test.js
+alert('안녕하세요');
+ 
+확장자.htm으로 저장
+ex) main.htm
+ 
+<html>
+ <head>
+  <title>페이지 제목입니다</title>
+  <script type="text/javascript" src="test.js"></script>
+ </head>
+ <body>
+  홈페이지에 오신 것을 환영합니다
+ </body>
+</html>
+
+
