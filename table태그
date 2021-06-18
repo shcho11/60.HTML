@@ -1,0 +1,59 @@
+table 태그 <th>, <tr>, <td>
+- 테이블 만들거나 전체구성(layout) 만들 뗴 사용할 수도 있으나, layout 용도로는 <div> 사용하는 것이 바람직
+- <table>은 각각 셀로 만드는데, header cell과 standard cell로 나눠짐.
+- <th>를 header cell이라 하며, 나머지를 standard cell이라 함.
+
+1. <th>내용</th> : table head의 약자. 표의 제목을 쓰는 역할. 기본 값은 굵은 글씨체에 중앙 정렬.
+2. <tr>내용</tr> : table row의 약자. 가로줄을 만드는 역할. 기본값은 보통 글씨체에 왼쪽 정렬.
+3. <td>내용</td> : table data의 약자. 셀을 만드는 역할. 기본값은 보통 글씨체에 왼쪽 정렬.
+
+ex)
+<!DOCTYPE html>
+<html>
+ <head>
+ </head>
+ <body>
+  <table border="1">
+   <tr>
+    <th>번호</th>
+    <th>이름</th>
+   </tr>
+   <tr>
+    <td>1</td>
+    <td>김일훈</td>
+   </tr>
+   <tr>
+    <td>2</td>
+    <td>김이훈</td>
+   </tr>
+  </table>
+ </body>
+</html>
+
+4. <table> 속성과 함꼐 사용될 수 있는 속성
+ : colspan, rowspan, border, bgcolor, width, height, cellpadding, cellspacing, align, valign 등
+ 
+1) colspan : column span. 셀(가로줄)을 합치는 개수를 지정.
+
+2) rowspan : row span. 셀(세로줄)을 합치는 개수를 지정.
+
+3) border : 테이블 경계선 굵기를 지정. (예: border="10")
+
+4) width : 너비를 지정 (픽셀 또는 %)
+
+5) height : 높이를 지정 (픽셀 또는 %)
+
+6) cellpadding : 셀과 경계선 사이의 여백
+
+7) cellspacing : 셀과 셀 사이의 여백
+
+8) align : 셀의 가로줄을 오른쪽(right), 왼쪽(left), 중앙(center) 등으로 정렬
+
+9) valign : 셀의 세로줄을 위(top), 아래(bottom)을 정렬.
+
+10) bgcolor : 배경색 지정. bgcolor 속성값으로는 색상 이름(ex. green) 또는 색상코드(ex. #ff0000) 등을 쓸 수 있음.
+
+11) bordercolor : 경계선 색깔 지정.
+
+
+    
