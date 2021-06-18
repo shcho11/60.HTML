@@ -1,0 +1,11 @@
+html/css 문서를 연결하는 a태그(href, title, target 속성)
+- 링크 태그
+- 링크를 통해 다른 웹페이지로 연결하거나, 문서 내에서 이동
+
+<a> 태그
+- anchor의 약자.
+- <a> 태그는 혼자 사용되지 않고, 아래와 같은 속성과 함께 사용됨.
+
+1. href 속성
+- hypertext의 약자로, 연결할 URL주소를 지정하는 속성
+- 사용 방법 : <a href="https://github.com/shcho11/">shcho11깃허브 바로가기</a>
