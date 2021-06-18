@@ -35,3 +35,21 @@ html/css 문서를 연결하는 a태그(href, title, target 속성)
 
 2. title 속성
 - 해당 링크에 마우스를 갖다대면 link에 대한 설명이 나옴.
+- 사용 방법 : <a href="https://github.com/shcho11/" title="my github page">나의 깃허브 페이지 바로가기</a>
+
+3. target 속성
+- 링크를 클릭할 때, 창을 어떻게 열 지를 결정
+- target속성값의 종류
+  _self : 연결 문서를 클릭한 창에서 연다. (기본값)
+  _blank : 연결 문서를 새 창에서 연다.
+  _parent : 부모(상위레벨) 창에서 연다. (부모 창이 없으면 _self 처럼 표시한다)
+  _top : 가장 상위레벨 창에서 연다. (즉, 프레임을 무시하며, 전체 브라우저 창에서)(부모가 없으면 _self처럼 표시한다)
+  frame name 지정된 프레임에서 연다.
+  
+- 사용 예시 : <a href="https://github.com/shcho11" target="_blank">나의 깃허브 페이지 바로가기</a>
+
+* <a>태그는 문자 뿐 아니라, 이미지, <div> 등에도 링크를 걸 수 있음.
+- 사용 예시 : <a href="https://github.com/shcho11"><img src="main.png"/></a>
+             <a href="https://github.com/shcho11"><div id="a">애국가</div></a>
+  
+
