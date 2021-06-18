@@ -78,7 +78,8 @@ Javascript 객체모형
  DOM 이란?
     - 문서 객체 모델. 하나의 웹 문서를 객체화해서 문서의 구조에 접근할 수 있는 방법.
 
- 참고 : <br><br>
+    
+참고 : <br><br>
 <a href="https://m.blog.naver.com/PostList.naver?blogId=bionic2030">참고 1. 만찐두빵의 프로그래밍 블로그</href><br>
 <a href="https://aboooks.tistory.com/">참고 2. 지구별 안내서</href>
  
