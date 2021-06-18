@@ -1,0 +1,35 @@
+주석삽입
+- 주석이란 ? : 일종의 설명으로서, 나중에 태그를 수정하거나 다른 사람들이 이해하기 쉽도록 코드에 설명을 달아놓는 글.
+- 주석은 웹페이지 화면에 출력되진 않음. (브라우저가 이 부분을 무시하거나 실행하지 않음) 
+- HTML과 CSS, Javascript는 주석 처리 방법이 서로 다름.
+
+1. HTML 주석삽입 방법
+- 표기 방식 : <!-- 내용내용내용 -->
+ex) 
+<!DOCTYPE html>
+ <html>
+  <head>
+   <!--여기서부터 본문입니다 -->
+  <body>
+   본문내용 입력
+  </body>
+ </html>
+ 
+2. Javascript 주석삽입 방법
+- 표기 방식 : 1줄인 경우, //로 시작함. 2줄 이상인 경우 /* 주석내용입력 */
+ex) (1줄인 경우)
+//머릿말에 쓰기
+document.getElementsById("myH1").innterHTML="환영합니다";
+
+ex) (2줄 이상인 경우)
+/*
+아래 코드는 머릿말과 문단에 쓸 것. 
+홈페이지 시작에 표시됨. 
+*/
+document.getElementsbyId("myH1").innerHTML="환영합니다";
+
+3. css 주석
+- 표기 방식 : /* 내용내용내용 */
+ex)
+/* 문단의 글자색, 글자크기, 정렬을 지정함 */
+p{color:black; font-size:11px; text-align:center;}
