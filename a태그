@@ -11,17 +11,27 @@ html/css 문서를 연결하는 a태그(href, title, target 속성)
 - 사용 방법 : <a href="https://github.com/shcho11/">shcho11깃허브 바로가기</a>
 
 1-1) 절대 URL
-
+- 웹페이지 주소 입력
+- 사용방법 : <a href="https://github.com/shcho11/">shcho11깃허브</a>
 
 1-2) 상대 URL
-
+- 같은 문서 안에서 링크를 만들 때
+<a href="right.htm">오른쪽 페이지로 이동</a>
+<a href="../right.htm">오른쪽 페이지로 이동</a> /* ../는 상위레벨 폴더를 말함*/
+<a href="home/right.htm">오른쪽 페이지로 이동</a> /* [home]폴더 안에 있는 right.htm문서를 말함*/
 
 1-3) 다른 형식의 URL
-
+- ftp://, mailto:, file:
+- 사용방법 : <a href="mailto:thenykr@gmail.com">CONTACT ME</a>
 
 1-4) id를 이용한 URL
-
-
+- 사용방법 : <div id="top">ID를 이용한 URL</div> 라고 ID를 미리 지정한 후 아래와 같이 연결
+            <a href="#top">맨 위로 이동</a>
+            또는
+            <a href="https://github.com/shcho11/HTML_JavaScript#top">맨 위로 이동</a>
+            
 1-5) 스크립트
+- 사용방법 : <a href="javascript.alert('Hello');">
 
-
+2. title 속성
+- 해당 링크에 마우스를 갖다대면 link에 대한 설명이 나옴.
