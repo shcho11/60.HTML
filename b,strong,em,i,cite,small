@@ -29,4 +29,18 @@ b,strong,em,i,cite,small 태그
 - 사용방법 : <small>내용내용내용</small>
 
 ex)
-<!DOCTYPE = 
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>제목입니다</title>
+ </head>
+ <body>
+  <b>b:월요일</b>
+  <strong>strong:화요일</strong>
+  <em>em:수요일</em>
+  <i>i:목요일</i>
+  <cite>cite:금요일</cite>
+  <small>small:토요일</small>
+  지정안함:일요일(브라우저기본글꼴)
+ </body>
+</html>
