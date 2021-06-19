@@ -34,8 +34,31 @@ ex)
  : colspan, rowspan, border, bgcolor, width, height, cellpadding, cellspacing, align, valign 등
  
 1) colspan : column span. 셀(가로줄)을 합치는 개수를 지정.
+ex)
+<table border="1">
+ <tr>
+  <td colspan="2">1학년1반</td>
+ </tr>
+ <tr>
+  <td>1</td>
+  <td>김민수</td>
+ </tr>
+</table>
 
 2) rowspan : row span. 셀(세로줄)을 합치는 개수를 지정.
+ex)
+<table border="1">
+ <tr>
+  <td rowspan="3">1학년1반</td>
+  <td>김민수</td>
+ </tr>
+ <tr>
+  <td>유영수</td>
+ </tr>
+ <tr>
+  <td>박서준</td>
+ </tr>
+</table>
 
 3) border : 테이블 경계선 굵기를 지정. (예: border="10")
 
