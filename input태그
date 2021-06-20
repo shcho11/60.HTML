@@ -29,42 +29,90 @@ input태그와 함꼐 사용할 수 있는 속성
 - image : 이미지로 된 전송버튼을 만든다. src 속성으로 이미지 url을 지정한다.
 
 2. name 
-속성값
 - text : input 요소의 이름.  (xhtml에서 name은 퇴화태그로, id를 사용한다.)
 
 3. value
-속성값
 - text : input 요소의 값.
 
 4. size
-속성값
 - 숫자 : input 요소의 너비
 
 5. src
-속성값
 - url : submit 버튼(type="image"인 경우)으로 사용할 이미지 주소.
 
 6. maxlength
-속성값
 - 숫자 : input 요소에서 허락하는 문자열 최대 숫자
 
 7. checked
-속성값
 - checked : type="checkbox"나 "radio"일 경우, 페이지가 로드될 때 요소가 미리 선택되어 있음 (디폴트값)
 
 8. accept
-속성값
 - media_type : type="file"인 경우, 서버가 받아들일 파일의 종류
 
 9. align
-속성값
 - left/right/top/middle/bottom : type="image"일 경우, 이미지 입력의 정렬. (html5에서 지원하지 않음)
 
 10. alt
-속성값
 - text : type="image"일 경우, 이미지의 대체텍스트
 
 11. disabled
-속성값
 - disabled : input 요소가 비활성화 상태.
 
+12. readonly
+- readonly : 입력 영역이 읽기만 가능하도록 지정.
+
+↓ 여기서부터는 html5에 새로 추가된 속성.
+
+13. autocomplete
+- on/off : input요소 자동완성 여부 지정.
+
+14. autofocus
+- autofocus : input요소가 자동으로 포커스됨.
+
+15. form
+- form_id : input요소가 속한 하나 이상의 form 지정.
+
+16. formaction
+- url : 양식이 전송될 때 (type="submit","image"일 때) 입력제어장치를 처리할 주소
+
+17. formenctype
+: 서버에 전송될 때 데이터의 부호화 방식 (application/x-www-form-urlencoded, text/plain 등)
+
+18. formmethod
+- get/post : action url에 대한 (type="submit","image"일 경우) 자료를 보낼 때 HTTP 방법
+
+19. formnovalidate
+- formnovalidate : 양식 요소가 전송될 때, 유효화되지 않아야 하는지 지정.
+
+20. formtarget
+: type="submit","image"일 때 창이 열릴 곳. _blank, _self, _parent, _top, frame 이름 중 선택.
+
+21. height
+- pixels : input 요소의 높이 (type="image"일 때)
+
+22. width
+- pixels : input 요소의 너비 (type="image"일 때)
+
+23. list
+- datalist_id : input 요소를 위한 미리 지정된 옵션을 담은 datalist 요소를 참조
+
+24. max 
+- number/date : input 요소의 최대값
+
+25. min
+- number/date : input 요소의 최소값
+
+26. step
+- number : 입력 영역 요구되는 숫자 간격
+
+27. multiple
+- multiple : 사용자가 하나 이상의 값을 입력할 수 있도록 지정.
+
+28. pattern
+- regexp : input 요소값이 체크될 보통 표현
+
+29. placeholder
+- text : input 요소의 예상된 값을 설명하는 짧은 힌트
+
+30. required
+- required : 입력 영역이 양식 전송 전에 채워져야 함을 지정.
