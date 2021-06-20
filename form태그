@@ -1,0 +1,12 @@
+form 태그
+- 웹사이트에서 흔히 볼 수 있는 '회원가입 양식'이나 '검색창' 등을 만들 때 form 태그를 사용.
+- <form>내용내용내용</form> 
+- form태그 안에는 html의 모든 태그를 넣을 수 있음.
+- 단, form태그 안에 다른 form태그를 넣진 않음.
+- <input> 입력영역을 만드는 태그. type 속성으로 입력영역의 종류를 지정함.
+- 입력영역 종류에는 button, checkbox, text, file, submit 등이 있음.
+- 사용예시
+  <form action="http://somesite.com/test.php" method="post">
+   Firstname: <input type="text" id="fname"><br>
+   Lastname: <input type="text" id="lname"><br>
+  </form>
