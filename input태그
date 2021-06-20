@@ -1,0 +1,70 @@
+input 태그
+- 사용자가 데이터를 입력할 수 있는 '입력영역'을 지정하는 태그
+- form 요소 안에 사용되며, <input>은 닫는 태그가 없음.
+- type 속성으로 입력 양식의 여러가지 종류(라디오 버튼, 체크박스, 입력창, 누름 버튼 등)을 선택할 수 있음.
+ex)
+<form action="https://github.com/shcho11/HTML_Javascript" method="post">
+ <h3>1.Which Carmaker do you like?</h3>
+ <input type="checkbox" name="kind" value="MercedesBenz">MercedesBenz<br>
+ <input type="checkbox" name="kind" value="BMW">BMW<br>
+ <h3>2.What is your Sexuality?</h3>
+ <input type="radio" name="sex" value="male">male
+ <input type="radio" name="sex" value="female">female<br><br>
+ <input type="submit" value="submit">
+ <input type="reset" value="reset">
+</form>
+
+input태그와 함꼐 사용할 수 있는 속성
+1. type
+속성값
+- text : 기본값. 한 줄의 텍스트 입력 칸을 만든다.
+- password : text 속성값과 같지만, 문자를 숨겨서 표시 
+- checkbox : 체크박스를 만든다.
+- radio : 라디오 버튼을 만든다.
+- button : 누름 버튼을 만든다.
+- sbumit : 전송 버튼을 만든다.
+- reset : 재설정 버튼을 만든다.
+- file : 파일 선택 창을 만든다.
+- hidden : 사용자에게 보이지 않는 숨김창을 만든다.
+- image : 이미지로 된 전송버튼을 만든다. src 속성으로 이미지 url을 지정한다.
+
+2. name 
+속성값
+- text : input 요소의 이름.  (xhtml에서 name은 퇴화태그로, id를 사용한다.)
+
+3. value
+속성값
+- text : input 요소의 값.
+
+4. size
+속성값
+- 숫자 : input 요소의 너비
+
+5. src
+속성값
+- url : submit 버튼(type="image"인 경우)으로 사용할 이미지 주소.
+
+6. maxlength
+속성값
+- 숫자 : input 요소에서 허락하는 문자열 최대 숫자
+
+7. checked
+속성값
+- checked : type="checkbox"나 "radio"일 경우, 페이지가 로드될 때 요소가 미리 선택되어 있음 (디폴트값)
+
+8. accept
+속성값
+- media_type : type="file"인 경우, 서버가 받아들일 파일의 종류
+
+9. align
+속성값
+- left/right/top/middle/bottom : type="image"일 경우, 이미지 입력의 정렬. (html5에서 지원하지 않음)
+
+10. alt
+속성값
+- text : type="image"일 경우, 이미지의 대체텍스트
+
+11. disabled
+속성값
+- disabled : input 요소가 비활성화 상태.
+
