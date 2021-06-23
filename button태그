@@ -44,4 +44,52 @@ button 태그
 
 8) formaction (type="submit"할때 데이터를 전송할 곳)
 : 지원 브라우저 : IE10, 크롬, 파이어폭스, 사파리, 오페라
-- url : 
+- url
+
+9) formenctype (type="submit"일때 서버에 데이터를 보낼 때 부호화하는 방법)
+: fromenctype속성을 사용하면 enctype속성을 무시함.
+: 지원 브라우저 : IE10, 크롬, 파이어폭스, 사파리, 오페라
+- application/x-www-form-urlencoded : 기본값. 모든 문자가 전송전에 부호화됨.
+- multipart/form-data : 어떤 문자도 부호화되지 않음. (파일 업로드 버튼을 만들 때 사용)
+- text plain : 공백은 +기호로 바뀌지만 어떠한 문자도 부호화되지 않음.
+
+10) formmethod (type="submit"일때 사용할 http방법. 이 속성은 method속성을 무시함.)
+: 지원 브라우저 : IE10, 크롬, 파이어폭스, 오페라, 사파리
+- get : 데이터를  url에 덧붙여 전송. 
+- post : body안에 양식데이터를 첨부함. (데이터는 url에 보이지 않음)
+
+11) formnovalidate (type="submit"일 때 데이터가 전송에서 유요화되지 않아야 함.)
+: 문법 : <button formnovalidate> 
+: xhtml에서 문법 : <button formnovalidate="formnovalidate">
+: 지원 브라우저 : IE10, 크롬, 파이어폭스, 오페라
+
+* Button vs. Input type 어떤 걸 써야할까?
+
+: 양식을 전송할 때 input type="submit"을 사용하면 별도의 자바스크립트 필요없이 자동으로 전송.
+: 하지만 button요소는 양식 전송을 위해서 자바스크립트가 추가적으로 필요.
+
+예시)
+html
+<h3>button예제</h3>
+<button type="button" onclick="alert('반가워요')">버튼을 클릭해 보세요</button>
+
+<h3>input type예제</h3>
+<form action="url">
+
+Which carmaker do you like?
+<p>
+1. Mercedes Benz<input type="checkbox" name="carmakers" value="mercedesbenz"><br>
+2. BMW<input type="checkbox" name="carmakers" value="bmw"><br>
+3. AUDI<input type="checkbox" name="carmakers" value="audi"><br>
+</p>
+<input type="submit" value="submit">
+</form>
+
+css
+form{
+width: 280px;
+height: 150px;
+border: 1px solid #B2CCFF;
+padding: 20px;
+background-color: #FFB2D9;
+}
