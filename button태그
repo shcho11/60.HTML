@@ -1,0 +1,47 @@
+button 태그
+- 버튼을 만드는 태그.
+- <input type="submit 또는 reset 또는 button">과 유사.
+- 차이점이라면, button 요소 안에는 텍스트 또는 이미지 같은 '내용'을 넣을 수 있다는 점.
+- 문법 : <button type="   "> 내용내용내용 </button>
+- button태그를 사용시에는 항상 type 속성을 지정해야 함. (지정하지 않으면 브라우저마다 각기 다른 기본값이 사용됨)
+- 주의 : ie8 이전 버전은 button태그사이에 있는 내용을 전송하며, 그 외 다른 브라우저는 value속성의 내용을 전송함. 
+        따라서 form 양식에서 버튼을 만들기 위해선 <button>태그보다 <input type=" "> 양식을 사용함.
+- 함께 사용할 수 있는 속성
+
+1) name 
+- 속성값 name : 버튼 이름
+
+2) type (버튼유형)
+- button : 누름 버튼
+- reset : 초기값으로 재설정하는 버튼
+- submit : 데이터를 전송하는 전송버튼
+
+3) value (button의 기본값 지정)
+- text
+
+4) disabled
+- <button disabled> , xhtml에서는 <button disabled="disabled">
+
+<!--- 아래는 html5에서 새로 추가된 속성--->
+
+5) formtarget (창이 열릴 곳)
+: 이 속성은 target 속성을 무시함.
+: 지원브라우저: IE10, 크롬, 파이어폭스, 오페라, 사파리
+- _blank : 새 창에 열기
+- _self : 기본값. (클릭한 곳에서 열기)
+- _parent : 부모(상위)창에서 열기.
+- _top : 가장 상위 창에서 열기.
+- "프레임이름" : 그 이름을 가진 프레임에서 열기.
+
+6) autofocus (버튼이 자동으로 포커스됨.
+: 문법: <button autofocus>
+: xhtml에서 문법 : <button autofocus="autofocus"?
+: 지원브라우저 : IE10, 크롬, 파이어폭스, 사파리, 오페라13
+
+7) form 
+- form id : 버튼이 속한 form의 id 
+: 지원 브라우저 : IE 제외한 주요브라우저 지원
+
+8) formaction (type="submit"할때 데이터를 전송할 곳)
+: 지원 브라우저 : IE10, 크롬, 파이어폭스, 사파리, 오페라
+- url : 
