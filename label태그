@@ -1,0 +1,40 @@
+label태그
+- <label>태그는 양식 입력창 (form control)을 설명하는 '이름표'라 볼 수 있음.
+- label 요소로 묶인 텍스트를 클릭시  form control 자체가 선택됨. (다시 클릭시 선택해제)
+- form control이란 : input, textarea, button, select 요소로 생성된 입력제어장치
+
+ㅁ 함께 사용할 수 있는 속성
+1) for 
+-  속성값: 요소id (label로 묶을 id. 관련 요소의 id와 같음.)
+
+2) form
+- 속성값: form id (label이 속한 form의 id)
+
+ㅁ label로 묶는 방법은 두 가지가 있음. 
+1) for 속성을 사용하거나
+2) label 요소안에 form control을 두는 것. 
+
+ㅁ 예제 
+html
+
+<form action="https://url.com">
+  <label>이름 : <input type="text" name="nick"></label>
+ <p>
+  <h3>좋아하는 영화장르를 선택해주세요</h3>
+  <label for="action">1. 액션</label><input type="checkbox" name="movie" value="action" id="action"><br>
+  <label for="sf">2. 공상과학</label><input type="checkbox" name="movie" value="sf" id="sf"><br>
+  3.스릴러<input type="checkbox" name="movie" value="thrill"><br>
+ </p>
+  <input type="submit" value="전송"><input type="reset" value="초기화">
+</form>
+
+css
+
+form{
+ background-color:#D9E5FF;
+ width: 300px;
+ height: 200px;
+ border: 1px solid #B2CCFF;
+ padding: 20px;
+}
+
