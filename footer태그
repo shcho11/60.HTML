@@ -1,0 +1,40 @@
+footer태그
+- footer요소는 문서에 대한 꼬릿말. 그 문서에 대한 정보를 담아야 함.
+- 대체로 footer는 문서의 끝에 옴.(꼭 끝에 올 필요는 없음)
+- 글쓴이 정보, 저작권 정보, 연락처 정보, 사이트맵, 맨위로 돌아가기, 관계된 문서 등
+- 한 문서에 여러개의 footer요소를 지닐 수도 있음.
+- footer 요소는 문서의 영역을 구분짓는 sectioning요소가 아님. 
+- 지원 브라우저 : ie9.0+, chrome6.0+, ff4.0+, safari5.0+, opera11.1+
+
+ㅁ 사용 예
+html
+
+<body>
+ <footer><a href="#">목차로 가기</a></footer>
+ <div>
+  <h1>FOOTER ELEMENT</h1>
+  <p>본문내용내용내용</p>
+ </div>
+ <footer><a href="#">목차로 가기</a></footer>
+</body>
+
+ㅁ 사용 예2
+html
+
+<body>
+ <article>
+ <footer>
+ <p><a href="#">Back to index</a></p>
+ </footer>
+ <h3>Footer Element</h3>
+ <p>The footer element represents a footer for its nearest ancestor sectioning content or sectioning root element</p>
+ ...
+ ...
+ </article>
+ <footer class="footer">
+ <p><a href="#">About us</a>
+ <a href="#">Terms of Service</a>
+ <a href="#">Sitemap<a></p>
+ <p>Copyright @ 2021 shcho11 github</p>
+ </footer>
+</body>
