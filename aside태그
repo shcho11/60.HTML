@@ -1,0 +1,34 @@
+aside태그
+- 주요한 내용이 아닌, 부차적인 내용을 담는 태그. 
+- aside 요소는 article요소 안쪽 또는 바깥 쪽에 올 수 있음.
+- article 태그 안쪽에 aside가 있을 경우, article 의 본문 내용과 관련있는 내용이어야 하고, 
+  article 태그 바깥쪽에 aside가 있을 경우, 전체 웹페이지와 관계있는 내용이어야 함.(div id="sidebar"와 같은 역할)
+- 지원 브라우저 : ie9+, chrome6.0+, ff4.0+, safari5.0+, opera11.1+
+
+사용 예 1 ) article 요소 안쪽에 사용 (블로그 글이나, 기사에 관계된 내용)
+
+<article>
+<header>위키피디아</header>
+<section>
+위키피디아는 의미있는 웹 기반의 자유로운 백과사전으로, 전세계 누구나 참여할 수 있으며..
+</section>
+<aside>
+"지구상에 모든 사람이 모든 인류 지식에 잘유롭게 접근할 수 있는 세계를 상상해보라. 그것이 우리가 하는 일이다"
+</aside>
+</article>
+
+사용 예 2 ) article 밖에 사용 (전체 웹 페이지와 관계된 내용)(블로그에서 흔히 볼 수 있는 사이드바 메뉴나 광고영역 생각하면 됨)
+
+<article>
+<header>SHCHO깃허브</header>
+<section>
+본문내용본문내용
+</section>
+</article>
+<aside>
+<h3>전체 글 목록 보기</h3>
+<a href="#">HTML</a>
+<a href="#">CSS</a>
+<a href="#">자바스크립트</a>
+</aside>
+
