@@ -1,0 +1,121 @@
+span태그와 div태그 
+- id, class와 함께 자주 사용되는 태그가 바로 span, div태그.
+  * id : 스타일을 지정할 때 사용하는 고유 이름, class : 스타일을 묶어서 지정할 때 사용하는 이름. 
+- span과 div 또한 그룹으로 묶어서 지정하는 것과 관련있음.
+
+1. span
+
+- <span>은 문자열을 원하는 부분만 선택해서 시각적 효과를 줄 수 있음.
+- <span> 사용 예
+  <span id="이름">내용내용내용</span>
+  <span class="이름">내용내용내용</span>
+  
+  * id를 사용하게되면 각각 고유의 이름을 모두 부여해야하므로, 전체를 묶어서 스타일지정 원할땐 class 를 사용하는 것이 편리함.
+
+예시)
+css (test.css로 저장)
+span.welcome {color:red}
+
+html
+<html>
+ <head>
+ <title>SHCHO깃허브</title>
+ <link rel="stylesheet" type="text/css" href="test.css"/>
+ </head>
+ <body>
+  <span class="welcome">SHCHO</span>홈에 오신 것을<span class="welcome">환영합니다</span>
+ <body>
+</html>
+
+
+2. div
+css (test.css로 저장)
+.am {background:green}
+.pm {background:yellow}
+
+
+html
+<html>
+ <head>
+ <title>SHCHO깃허브</title>
+ <link rel="stylesheet" type="text/css" href="test.css"/>
+ </head>
+ <body>
+  <div class="am"
+  <p>9시</p>
+  <p>10시</p>
+  <p>11시</p>
+  <p>12시</p>
+  </div>
+
+  <div class="pm"
+  <p>13시</p>
+  <p>14시</p>
+  <p>15시</p>
+  <p>16시</p>
+  </div>
+
+ </body>
+</html>
+  
+
+3. 특정영역 스타일 태그(ie. span)과 넓은 범위영역 스타일 태그(ie. div)태그의 차이점
+
+글꼴, 색깔, 너비높이 등 스타일을 지정할 때, 크게 두 가지 방식으로 지정할 수 있음. 
+ 1) 문자 일부분만을 선택하여 스타일 지정 (inline) 하거나, 
+ 2) 넓은 범위를 묶어서 지정하거나 (block)
+ 
+1) inline 요소
+- 예) <span> <b> <a> <img> 태그 등 
+
+사용 예 ) 
+<p>SHCHO깃허브에 오신 것을<span stype="color:red;">환영합니다</span></p>
+<p>SHCHO깃허브에 오신 것을<b style="background-color:yellow;">환영합니다</b></p>
+<p>SHCHO깃허브에 오신 것을<img src="welcome.gif" style="width:50px;height:50px;">환영합니다</p>
+
+2) block element
+- 예) <p> <div> <ol> <ul> <table> 등 
+- inline 태그와 달리 block태그를 사용할 때는 해당 요소가 속한 줄은 가로화면 전체 100%를 차지하며, 앞 뒤로 줄바꿈이 됨. 
+- 마치 그릇처럼 담아서 넓은 영역에 스타일을 줄 때 편리함.
+
+사용 예)
+<html>
+ <head>
+ <title>SHCHO깃허브</title>
+ <body>
+ 밑에 p화면이 div 적용 영역
+ <div style="background-color:yellow;">
+ <p>P화면입니다</p>
+ <p>P화면입니다</p>
+ <p>P화면입니다</p>
+ </div>
+ 
+ <div style="background-color:pink;">
+ <h1>H1화면입니다</h1>
+ <h2>H2화면입니다</h2>
+ <h3>H3화면입니다</h3>
+ <h4>H4화면입니다</h4>
+ <h5>H5화면입니다</h5>
+ <h6>H6화면입니다</h6>
+ </div>
+ 
+ <ol style="background-color:blue;">
+ <li>월요일</li>
+ <li>화요일</li>
+ <li>수요일</li>
+ </ol>
+ 
+ <ul style="background-color:green;">
+ <li>월요일</li>
+ <li>화요일</li>
+ <li>수요일</li>
+ </ul>
+ 
+ </body>
+</html>
+
+
+* div에 대해서 
+- 예전에는 웹문서 배치(layout)을 통하여 table태그를 사용해서 div를 대신하기도 하였으나, table은 원래 데이터가 들어간 "표"를 만들 목적의 태그임.
+  따라서 웹문서 구조나 배치는 div를 사용하는 것이 바람직. 
+  
