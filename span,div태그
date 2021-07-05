@@ -28,3 +28,32 @@ html
 </html>
 
 2. div
+css (test.css로 저장)
+.am {background:green}
+.pm {background:yellow}
+
+
+html
+<html>
+ <head>
+ <title>SHCHO깃허브</title>
+ <link rel="stylesheet" type="text/css" href="test.css"/>
+ </head>
+ <body>
+  <div class="am"
+  <p>9시</p>
+  <p>10시</p>
+  <p>11시</p>
+  <p>12시</p>
+  </div>
+
+  <div class="pm"
+  <p>13시</p>
+  <p>14시</p>
+  <p>15시</p>
+  <p>16시</p>
+  </div>
+
+ </body>
+</html>
+  
