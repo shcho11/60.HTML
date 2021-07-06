@@ -1,7 +1,86 @@
-div태그 사용하여 layout만들기
+* div태그 사용하여 layout만들기
 
 - div 태그는 하나 이상의 태그를 묶는 태그. 
 - 이렇게 묶어진 요소들은 하나의 객체로 취급, 속성을 주기도 함.
-- 따라서 웹 문서 전체 배치(laytou) 할때도 상당히 유리한 태그. 
+- 따라서 웹 문서 전체 배치(layout) 할때도 상당히 유리한 태그. 
 
 1. <div></div>로 묶어서 전체 스타일 주기
+예시)
+<div id="side_left">
+<p>월요일</p>
+<p>화요일</p>
+<p>수요일</p>
+</div>
+
+2. 이미지와 문장 함께 엮어 스타일 주기
+<div>
+<img src="flower.png" width="200px" height="200px">
+동해물과 백두산이 마르고닳도록 하느님이 보우하사 우리나라 만세
+</div>
+
+3. div태그를 이용한 레이아웃
+
+1) 레이아웃 하는 순서
+a. 실제 설계도 그리는 것 처럼 종이에 메뉴바, 사이드바, 본문, 하단 등의 배치를 그려보기
+b. 그리고 이름도 붙여보기 (이름은 직관적이고 알기 쉬운 이름 짓기)(숫자로 시작하지 않기)
+   예) 사이드바왼쪽 : side_left / 사이드바오른쪽 : side_right / 본문 : contents
+   
+* 3가지 객체 만들기 
+
+객체
+<div id="side_left">사이드바왼쪽(노랑)</div>
+<div id="contents">본문(녹색)</div>
+<div id="side_right">사이드바오른쪽(빨강)</div>
+
+스타일주기 
+width : 너비속성 (pixel, % 가능)
+height : 높이속성 (pixel, % 가능)
+float : 좌우정렬속성 (left 또는 right)
+background-color : 배경색 속성 (색상이름 또는 코드 가능)
+
+<style type="text/css">
+div#side_left {
+width:200px;
+height:700px;
+background-color:yellow;
+float:left;
+}
+#side_right {
+width:200px;
+height:700px;
+background-color:red;
+float:left;
+}
+</style>
+
+* 전체 html문서 작성해보기 
+
+<html>
+ <head>
+  <style type="text/css">
+  div#side_left {
+  width:200px;
+  height:700px;
+  background-color:yellow;
+  float:left;
+  }
+  #contents {
+  width:400px;
+  height:700px;
+  background-color:green;
+  float:left;
+  }
+  #side_right {
+  width:200px;
+  height:700px;
+  background-color:red;
+  float:left;
+  }
+  </style>
+ <head>
+ <body>
+  <div id="side_left">사이드바왼쪽(노랑)</div>
+  <div id="contents">본문(녹색)</div>
+  <div id="side_right">사이드바오른쪽(빨강)</div>
+ </body>
+</html>
